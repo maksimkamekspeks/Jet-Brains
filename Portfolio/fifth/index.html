@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+
+</head>
+<body>
+<header><nav>
+    <a href="#about" class="header">About me</a>
+    <a href="#portfolio" class="header">Portfolio</a>
+    <a href="#contacts" class="header">Contacts</a>
+    <button type="button" class="device_open">More Info!</button>
+    <button type="button" class="device_close">More Info!</button>
+</nav>
+</header>
+<table class="hamburger">
+    <tr>
+        <td><a href="#about">About me</a></td>
+    </tr>
+    <tr>
+        <td><a href="#portfolio">Portfolio</a></td>
+    </tr>
+    <tr>
+        <td><a href="#contacts">Contacts</a></td>
+    </tr>
+</table>
+<h1>Maksym Zoziuk, Soft Developer</h1>
+<h2 id="about me">About me</h2>
+<div><img src="pics/me.jpg" alt="Might be me"></div>
+<section id="about"><p>Postgraduate Studies in Micro- and Nanosystem Engineering</p></section>
+<h2>Portfolio</h2>
+<section id="portfolio">
+<ul>
+        <li>
+            <button type="submit" class="open-window">More Info!</button>
+
+            <img src="pics/phd.jpg" alt="phd">
+        </li>
+        <li>
+            <button type="submit" class="open-window">More Info!</button>
+            <img src="pics/programmer.jpg" alt="programmer">
+        </li>
+    </ul>
+</section>
+<div class="window" id="info">Info about my project <button type="submit" class="close">Close</button></div>
+<section id="contacts">
+    <footer>Number:<a href="tel:+1234567890"> +1234567890</a>
+        Email:<a href="mailto:example@mail.com"> example@mail.com </a></footer>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

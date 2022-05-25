@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap);
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 67px;
+    background-image: url("pics/header.png");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 61px;
+}
+h1, h2, ul, p, div{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 7px;
+}
+.submit{
+    color: white;
+}
+.window[id='info']{
+    display: none;
+    padding:20px;
+    border:solid black 1px;
+    border-radius:5px;
+    margin-left:550px;
+    margin-bottom:50px;
+
+    z-index:2;
+    background:white;
+    text-align:center;
+}
+
+h2[id="about me"], div, section[id="about"]{
+    position: relative;
+    left: -300px;
+}
+
+h2, div, section[id="portfolio"]{
+    position: relative;
+    margin-left: 350px;
+}
+
+img {
+    border-radius: 8px;
+    height: 500px;
+    width: 500px;
+}
+body{
+    background-color: #FBFEEC;
+    opacity: 98%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+    background-image: url("pics/footer.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+ul {
+    list-style-type: none;
+}
+section{
+    font-size: 17px;
+}
+li{
+    margin: 7px;
+}
+a{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HyperNews</title>
+</head>
+<body>
+<h2>Hyper news</h2>
+<ul>
+    <p>Coming soon</p>
+</ul>
+
+{% regroup news|dictsortreversed:"created" by created|slice:":-9" as news_by_date %}
+<ul>
+{% for info in news_by_date %}
+    <h4>{{ info.grouper }}</h4>
+        <li> {{ info.grouper }}
+        <ul>
+            {% for text in info.list %}
+          <li><a target="_blank" href="/news/{{text.link}}/">{{ text.title }}</a></li>
+            {% endfor %}
+        </ul>
+        </li>
+{% endfor %}
+</ul>
+<form action="/news/" method="get">{% csrf_token %}
+    <p>Search an article:</p>
+  <input type="text" name="q">
+  <button type="submit">Search an article</button>
+</form>
+<a href="/news/create/"> target="_blank" target="_blank" target="_blank"  </a>
+</body>
+</html>
